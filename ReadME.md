@@ -2,7 +2,6 @@
 # mLDNDCv.1.0 Documentation  
 **High-Performance Climate & Soil Feature Engineering and ML Training Pipeline for the production of (Machine Learning LandscapeDNDC) mLDNDCv1.0**
 
----
 
 ## 1. Overview
 
