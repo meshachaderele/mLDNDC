@@ -15,7 +15,7 @@ The system is optimized for:
 - Reproducible model training with lightweight experiment tracking
 - Scientific publication and methodological transparency
 
----
+
 
 ## 2. Project Structure
 
@@ -44,7 +44,6 @@ code/
 
 ```
 
----
 
 ## 3. Data Processing Module
 
@@ -56,7 +55,7 @@ The data processing layer is designed around:
 - **Explicit handling of missing dates**
 - **Separation of concerns** between feature creation steps
 
----
+
 
 ### 3.2 `pipeline.py`
 
@@ -68,7 +67,7 @@ Acts as the orchestration layer for the entire preprocessing workflow.
 - Ensures intermediate outputs are written correctly
 - Provides a reproducible processing pipeline
 
----
+
 
 ### 3.3 `process.py`
 
@@ -80,7 +79,7 @@ Main execution script that connects raw inputs to engineered outputs.
 - Applies data cleaning functions
 - Handles dataset merging and integrity checks
 
----
+
 
 ### 3.4 `feature_engineering.py`
 
@@ -106,7 +105,7 @@ Core feature engineering logic optimized for very large datasets.
 - Processes data in configurable chunks
 - Designed to minimize GPU memory fragmentation
 
----
+
 
 ### 3.5 `add_prec_days.py`
 
@@ -116,7 +115,7 @@ Adds precipitation-based features computed over day windows.
 **Examples**
 - Count of days it rained in a given year 
 
----
+
 
 ### 3.6 `add_prec_temp.py`
 
@@ -127,7 +126,6 @@ Extends precipitation features with temperature-based signals.
 - Joint precipitation–temperature indicators
 
 
----
 
 ### 3.7 `convert_to_parquet.py`
 
@@ -140,7 +138,7 @@ Optimizes storage and I/O performance.
 - Efficient compression
 - Faster downstream training
 
----
+
 
 ### 3.8 `finalize.py`
 
@@ -153,7 +151,7 @@ Final cleanup and export stage.
 - Dataset consistency checks
 - Writing final model-ready datasets
 
----
+
 
 ## 4. Model Training Module
 
@@ -165,7 +163,7 @@ The training pipeline focuses on:
 - Minimal overhead experiment tracking
 - Reproducibility for scientific use
 
----
+
 
 ### 4.2 `helper.py`
 
@@ -178,7 +176,7 @@ Shared utilities for model training.
 - Metric computation
 - Consistent train-test splitting
 
----
+
 
 ### 4.3 `tiny_mlflow.py`
 
@@ -190,7 +188,7 @@ Lightweight experiment tracking utility.
 - Logs parameters and metrics
 - Suitable for HPC and cluster environments
 
----
+
 
 ### 4.4 Training Notebooks
 
@@ -212,7 +210,6 @@ Lightweight experiment tracking utility.
 - Native categorical feature handling
 
 
----
 
 ## 5. Hardware and Performance Considerations
 
@@ -228,16 +225,8 @@ Lightweight experiment tracking utility.
 - Minimal CPU–GPU transfers
 - Float32 precision where appropriate
 
----
 
-## 6. Reproducibility and Scientific Use
 
-This codebase is suitable for inclusion in academic publications due to:
-- Clear modular structure
-- Deterministic processing steps
-- Explicit feature definitions
-- Transparent model training workflows
-- Scalable execution on HPC systems
 
 
 
