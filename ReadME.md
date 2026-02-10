@@ -21,6 +21,8 @@ The system is optimized for:
 ```
 code/
 ├── data_processing/
+│   ├── data/
+│       ├── ReadME.md
 │   ├── pipeline.py
 │   ├── process.py
 │   ├── feature_engineering.py
@@ -40,6 +42,7 @@ code/
 │   ├── train_xgb_cv.ipynb
 │   ├── train_lgb.ipynb
 │   └── train_catboost.ipynb
+│── ReadME.md
 
 ```
 
