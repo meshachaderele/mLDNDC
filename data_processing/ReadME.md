@@ -1,6 +1,6 @@
 ## Pipeline Execution Steps
 1. **Download datasets** 
-   Go to https://zenodo.org:
+   Go to https://zenodo.org/records/18573226:
    - Download all the files
    - Move them all to this directory `data_processing/data/`
    
