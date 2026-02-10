@@ -84,7 +84,7 @@ class Pipeline:
 
 
 if __name__ == "__main__":
-    pipeline = Pipeline(crop="WBAR", crop_type="winter", parquet=False)
+    pipeline = Pipeline(crop="WIWH", crop_type="winter", parquet=False)
 
 
 

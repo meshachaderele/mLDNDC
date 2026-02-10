@@ -2,8 +2,8 @@ import pandas as pd
 
 
 def add_precipitation_temperature(CROP, CROP_TYPE):
-    df = pd.read_csv("../data/climate_10km_2010_2020.csv")
-    df_class_climate = pd.read_csv("../data/climate_ai_classified.csv")
+    df = pd.read_csv("data/climate_10km_2010_2020.csv")
+    df_class_climate = pd.read_csv("data/climate_ai_classified.csv")
     sim_ids_df = pd.read_parquet(f"data/simulation_ids_{CROP}.parquet")
     
     
